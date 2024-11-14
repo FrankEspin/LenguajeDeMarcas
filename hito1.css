@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para el CV */
+.cv {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Estructura de Grid para el CV */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas en total */
+    gap: 20px;
+}
+
+.col-4 {
+    grid-column: span 4; /* Las columnas de 4 ocupan 4 espacios */
+}
+
+.col-8 {
+    grid-column: span 8; /* Las columnas de 8 ocupan 8 espacios */
+}
+
+h2 {
+    color: #333;
+}
+
+/* Estilos para las imágenes */
+.cv-photo {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Listas dentro del CV */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, una sola columna */
+    }
+
+    .col-4, .col-8 {
+        grid-column: span 1;
+    }
+}
