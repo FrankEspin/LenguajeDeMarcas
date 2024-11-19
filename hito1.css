@@ -74,4 +74,8 @@ ul li {
     .col-4, .col-8 {
         grid-column: span 1;
     }
+body {
+    margin-left: 20px;
+}
+
 }
