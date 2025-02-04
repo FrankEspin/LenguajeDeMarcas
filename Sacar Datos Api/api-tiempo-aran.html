@@ -1,0 +1,16 @@
+<script>
+    async function elTiempo() {
+        const response = await fetch('https://www.el-tiempo.net/api/json/v2/provincias/28/municipios/28013');
+       if (response.ok){
+        const data = await response.json();
+        console.log ("datos obtenidos", data);
+
+       }
+
+    else {
+    console.log('Error en el fetch');
+    }
+}
+    // Ejemplo de uso
+    elTiempo();
+</script>
