@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturas de Clientes</title>
+  <style>
+    /* General */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    /* Contenedor principal */
+    .invoice-container {
+      margin: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* Título de la sección de facturas */
+    .invoice-header {
+      font-weight: bold;
+      font-size: 1.8em;
+      color: #2980b9;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para las tablas de facturas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: #f9f9f9;
+    }
+
+    td:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Estilo para los botones de acción */
+    .btn {
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 1em;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none; /* Quitar subrayado */
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Facturas de Clientes</h1>
+
+  <div class="invoice-container">
+    <div class="invoice-header">Facturas de Clientes</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Factura #</th>
+          <th>Cliente</th>
+          <th>Fecha de Compra</th>
+          <th>Fecha de Entrega</th>
+          <th>Total Factura (€)</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>F001</td>
+          <td>Juan Pérez López</td>
+          <td>2023-01-05</td>
+          <td>2023-01-08</td>
+          <td>100.00</td>
+          <td><a href="factura.html" class="btn">Ver Detalles</a></td>
+        </tr>
+        <tr>
+          <td>F002</td>
+          <td>Carlos González Pérez</td>
+          <td>2023-01-15</td>
+          <td>2023-01-18</td>
+          <td>110.00</td>
+          <td><a href="factura_detalle_2.html" class="btn">Ver Detalles</a></td>
+        </tr>
+        <tr>
+          <td>F003</td>
+          <td>Rebeca Serrano Gómez</td>
+          <td>2023-04-05</td>
+          <td>2023-04-08</td>
+          <td>110.00</td>
+          <td><a href="factura_detalle_3.html" class="btn">Ver Detalles</a></td>
+        </tr>
+        <!-- Más facturas aquí... -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
+

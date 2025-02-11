@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información de Clientes</title>
+  <style>
+    /* General */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    /* Contenedor principal */
+    .main-container {
+      margin: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* Estilos de las tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: #f9f9f9;
+    }
+
+    td:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Estilo para los botones de acción */
+    .btn {
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 1em;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Información de Clientes</h1>
+
+  <div class="main-container">
+    <div class="section">
+      <h2>Clientes</h2>
+      <table id="tabla-clientes">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Los clientes serán insertados aquí dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // Este es un ejemplo de los datos en formato JSON (puedes reemplazar con el archivo real 'data.js')
+    const clientes = [
+      {
+        "nombre": "Juan Pérez López",
+        "telefono": "612345678",
+        "direccion": "Calle Ficticia 12, Madrid, 28001",
+        "email": "juan.perez@email.com"
+      },
+      {
+        "nombre": "Carlos González Pérez",
+        "telefono": "634567890",
+        "direccion": "Avenida Central 10, Barcelona, 08002",
+        "email": "carlos.gonzalez@email.com"
+      },
+      {
+        "nombre": "Rebeca Serrano Gómez",
+        "telefono": "612345678",
+        "direccion": "Calle Central 14, Alicante, 03001",
+        "email": "rebeca.serrano@email.com"
+      }
+    ];
+
+    // Mostrar los clientes en la tabla
+    const tablaClientes = document.getElementById('tabla-clientes').getElementsByTagName('tbody')[0];
+    clientes.forEach(cliente => {
+      const row = tablaClientes.insertRow();
+      row.innerHTML = `
+        <td>${cliente.nombre}</td>
+        <td>${cliente.telefono}</td>
+        <td>${cliente.direccion}</td>
+        <td>${cliente.email}</td>
+      `;
+    });
+  </script>
+
+</body>
+</html>

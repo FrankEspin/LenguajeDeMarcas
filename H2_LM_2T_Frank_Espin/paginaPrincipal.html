@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Principal</title>
+  <style>
+    /* General */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    /* Contenedor principal */
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .menu {
+      background-color: #2980b9;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+    }
+
+    .menu a {
+      padding: 15px;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      border-bottom: 1px solid #3498db;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #3498db;
+    }
+
+    .menu a:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .menu a:last-child {
+      border-bottom: none;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    /* Estilo para la sección de información */
+    .section {
+      margin: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bienvenido al Menú Principal</h1>
+
+  <div class="menu-container">
+    <div class="menu">
+      <a href="infoClientes.html">Información de Clientes</a>
+      <a href="infopedidos2023.html">Información Pedidos 2023</a>
+      <a href="infopedidos2024.html">Información Pedidos 2024</a>
+      <a href="factura_cliente.html">Factura Cliente</a>
+      <a href="pedidos2023.html">Pedidos 2023</a>
+      <a href="pedidos2024.html">Pedidos 2024</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Selecciona una opción del menú</h2>
+    <p>Haz clic en los enlaces del menú para ver la información correspondiente.</p>
+  </div>
+
+</body>
+</html>

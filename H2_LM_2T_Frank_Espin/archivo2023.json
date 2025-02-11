@@ -1,0 +1,370 @@
+{
+    "2023": {
+      "Q1": [
+        {
+          "pedido_id": "P001",
+          "fecha_compra": "2023-01-05",
+          "fecha_entrega": "2023-01-08",
+          "total_factura": 100.00,
+          "cliente": {
+            "nombre": "Juan",
+            "apellidos": "Pérez López",
+            "telefono": "612345678",
+            "direccion": {
+              "calle": "Calle Ficticia 12",
+              "ciudad": "Madrid",
+              "codigo_postal": "28001",
+              "provincia": "Madrid"
+            },
+            "email": "juan.perez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 30.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Juguete para perros",
+              "referencia": "JP001",
+              "precio": 50.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P002",
+          "fecha_compra": "2023-01-15",
+          "fecha_entrega": "2023-01-18",
+          "total_factura": 110.00,
+          "cliente": {
+            "nombre": "Carlos",
+            "apellidos": "González Pérez",
+            "telefono": "634567890",
+            "direccion": {
+              "calle": "Avenida Central 10",
+              "ciudad": "Barcelona",
+              "codigo_postal": "08002",
+              "provincia": "Barcelona"
+            },
+            "email": "carlos.gonzalez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Comida para gatos",
+              "referencia": "CG001",
+              "precio": 35.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Arenero para gatos",
+              "referencia": "AG001",
+              "precio": 55.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P003",
+          "fecha_compra": "2023-02-10",
+          "fecha_entrega": "2023-02-12",
+          "total_factura": 90.00,
+          "cliente": {
+            "nombre": "Ana",
+            "apellidos": "García Sánchez",
+            "telefono": "623456789",
+            "direccion": {
+              "calle": "Calle Bella 5",
+              "ciudad": "Barcelona",
+              "codigo_postal": "08002",
+              "provincia": "Barcelona"
+            },
+            "email": "ana.garcia@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 40.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Juguete para gatos",
+              "referencia": "JP001",
+              "precio": 15.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P004",
+          "fecha_compra": "2023-02-20",
+          "fecha_entrega": "2023-02-22",
+          "total_factura": 95.00,
+          "cliente": {
+            "nombre": "Luis",
+            "apellidos": "Martín Fernández",
+            "telefono": "630123456",
+            "direccion": {
+              "calle": "Avenida Paraíso 8",
+              "ciudad": "Valencia",
+              "codigo_postal": "46001",
+              "provincia": "Valencia"
+            },
+            "email": "luis.martin@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Comida para gatos",
+              "referencia": "CG001",
+              "precio": 30.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Juguete para perros",
+              "referencia": "JP001",
+              "precio": 45.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P005",
+          "fecha_compra": "2023-03-02",
+          "fecha_entrega": "2023-03-05",
+          "total_factura": 120.00,
+          "cliente": {
+            "nombre": "Juan",
+            "apellidos": "Pérez López",
+            "telefono": "612345678",
+            "direccion": {
+              "calle": "Calle Ficticia 12",
+              "ciudad": "Madrid",
+              "codigo_postal": "28001",
+              "provincia": "Madrid"
+            },
+            "email": "juan.perez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Juguete para perros",
+              "referencia": "JP001",
+              "precio": 50.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 50.00,
+              "unidades": 1
+            }
+          ]
+        }
+      ],
+      "Q2": [
+        {
+          "pedido_id": "P006",
+          "fecha_compra": "2023-04-05",
+          "fecha_entrega": "2023-04-08",
+          "total_factura": 110.00,
+          "cliente": {
+            "nombre": "Rebeca",
+            "apellidos": "Serrano Gómez",
+            "telefono": "612345678",
+            "direccion": {
+              "calle": "Calle Central 14",
+              "ciudad": "Alicante",
+              "codigo_postal": "03001",
+              "provincia": "Alicante"
+            },
+            "email": "rebeca.serrano@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Comida para gatos",
+              "referencia": "CG001",
+              "precio": 35.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Arenero para gatos",
+              "referencia": "AG001",
+              "precio": 55.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P007",
+          "fecha_compra": "2023-04-12",
+          "fecha_entrega": "2023-04-15",
+          "total_factura": 75.00,
+          "cliente": {
+            "nombre": "David",
+            "apellidos": "Gómez Ruiz",
+            "telefono": "634567890",
+            "direccion": {
+              "calle": "Avenida Castilla 15",
+              "ciudad": "Valladolid",
+              "codigo_postal": "47001",
+              "provincia": "Valladolid"
+            },
+            "email": "david.gomez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Juguete para perros",
+              "referencia": "JP001",
+              "precio": 25.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 50.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P008",
+          "fecha_compra": "2023-05-02",
+          "fecha_entrega": "2023-05-04",
+          "total_factura": 140.00,
+          "cliente": {
+            "nombre": "Laura",
+            "apellidos": "Sánchez Martínez",
+            "telefono": "636567890",
+            "direccion": {
+              "calle": "Calle Larga 20",
+              "ciudad": "Zaragoza",
+              "codigo_postal": "50001",
+              "provincia": "Zaragoza"
+            },
+            "email": "laura.sanchez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 30.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 40.00,
+              "unidades": 2
+            }
+          ]
+        },
+        {
+          "pedido_id": "P009",
+          "fecha_compra": "2023-05-12",
+          "fecha_entrega": "2023-05-14",
+          "total_factura": 110.00,
+          "cliente": {
+            "nombre": "Luis",
+            "apellidos": "Martín Fernández",
+            "telefono": "630123456",
+            "direccion": {
+              "calle": "Avenida Paraíso 8",
+              "ciudad": "Valencia",
+              "codigo_postal": "46001",
+              "provincia": "Valencia"
+            },
+            "email": "luis.martin@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 25.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Comida para gatos",
+              "referencia": "CG001",
+              "precio": 30.00,
+              "unidades": 1
+            },
+            {
+              "nombre": "Juguete para perros",
+              "referencia": "JP001",
+              "precio": 55.00,
+              "unidades": 1
+            }
+          ]
+        },
+        {
+          "pedido_id": "P010",
+          "fecha_compra": "2023-06-10",
+          "fecha_entrega": "2023-06-12",
+          "total_factura": 90.00,
+          "cliente": {
+            "nombre": "Carlos",
+            "apellidos": "González Pérez",
+            "telefono": "634567890",
+            "direccion": {
+              "calle": "Avenida Central 10",
+              "ciudad": "Barcelona",
+              "codigo_postal": "08002",
+              "provincia": "Barcelona"
+            },
+            "email": "carlos.gonzalez@email.com"
+          },
+          "productos": [
+            {
+              "nombre": "Correa de perro",
+              "referencia": "CP001",
+              "precio": 20.00,
+              "unidades": 2
+            },
+            {
+              "nombre": "Comida para perros",
+              "referencia": "CP002",
+              "precio": 50.00,
+              "unidades": 1
+            }
+          ]
+        }
+      ]
+    }
+}

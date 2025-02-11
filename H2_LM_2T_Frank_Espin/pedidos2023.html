@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos 2023</title>
+  <style>
+    /* General */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+
+    /* Contenedor principal */
+    .year-section {
+      margin: 30px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* Sección de año */
+    .year-header {
+      font-weight: bold;
+      font-size: 1.8em;
+      color: #2980b9;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Sección de trimestre */
+    .quarter-header {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #16a085;
+      margin-top: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    /* Estilo para cada pedido */
+    .pedido {
+      background-color: #ecf0f1;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .pedido h3 {
+      color: #34495e;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    /* Estilos de listas */
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #2980b9;
+    }
+
+    /* Estilos de los títulos de secciones dentro de cada pedido */
+    h4 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    /* Estilos de las tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      font-size: 1em;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+
+    td {
+      background-color: #f9f9f9;
+    }
+
+    td:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Estilo para los botones de acción */
+    .btn {
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 1em;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3498db;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pedidos 2023</h1>
+
+  <div class="year-section">
+    <div class="year-header">2023</div>
+
+    <!-- Q1 -->
+    <div class="quarter-section">
+      <div class="quarter-header">Q1</div>
+      <div class="pedido">
+        <h3>Pedido P001</h3>
+        <p><strong>Fecha de Compra:</strong> 2023-01-05</p>
+        <p><strong>Fecha de Entrega:</strong> 2023-01-08</p>
+        <p><strong>Total Factura:</strong> 100.00 €</p>
+        <h4>Cliente:</h4>
+        <ul>
+          <li><strong>Nombre:</strong> Juan Pérez López</li>
+          <li><strong>Teléfono:</strong> 612345678</li>
+          <li><strong>Dirección:</strong> Calle Ficticia 12, Madrid, 28001, Madrid</li>
+          <li><strong>Email:</strong> juan.perez@email.com</li>
+        </ul>
+        <h4>Productos:</h4>
+        <ul>
+          <li>Correa de perro - 2 unidades - 20.00 € c/u</li>
+          <li>Comida para perros - 1 unidad - 30.00 €</li>
+          <li>Juguete para perros - 1 unidad - 50.00 €</li>
+        </ul>
+      </div>
+
+      <div class="pedido">
+        <h3>Pedido P002</h3>
+        <p><strong>Fecha de Compra:</strong> 2023-01-15</p>
+        <p><strong>Fecha de Entrega:</strong> 2023-01-18</p>
+        <p><strong>Total Factura:</strong> 110.00 €</p>
+        <h4>Cliente:</h4>
+        <ul>
+          <li><strong>Nombre:</strong> Carlos González Pérez</li>
+          <li><strong>Teléfono:</strong> 634567890</li>
+          <li><strong>Dirección:</strong> Avenida Central 10, Barcelona, 08002, Barcelona</li>
+          <li><strong>Email:</strong> carlos.gonzalez@email.com</li>
+        </ul>
+        <h4>Productos:</h4>
+        <ul>
+          <li>Correa de perro - 1 unidad - 20.00 €</li>
+          <li>Comida para gatos - 2 unidades - 35.00 € c/u</li>
+          <li>Arenero para gatos - 1 unidad - 55.00 €</li>
+        </ul>
+      </div>
+
+      <!-- Más pedidos de Q1 aquí... -->
+    </div>
+
+    <!-- Q2 -->
+    <div class="quarter-section">
+      <div class="quarter-header">Q2</div>
+      <div class="pedido">
+        <h3>Pedido P006</h3>
+        <p><strong>Fecha de Compra:</strong> 2023-04-05</p>
+        <p><strong>Fecha de Entrega:</strong> 2023-04-08</p>
+        <p><strong>Total Factura:</strong> 110.00 €</p>
+        <h4>Cliente:</h4>
+        <ul>
+          <li><strong>Nombre:</strong> Rebeca Serrano Gómez</li>
+          <li><strong>Teléfono:</strong> 612345678</li>
+          <li><strong>Dirección:</strong> Calle Central 14, Alicante, 03001, Alicante</li>
+          <li><strong>Email:</strong> rebeca.serrano@email.com</li>
+        </ul>
+        <h4>Productos:</h4>
+        <ul>
+          <li>Comida para gatos - 1 unidad - 35.00 €</li>
+          <li>Arenero para gatos - 2 unidades - 55.00 € c/u</li>
+          <li>Correa de perro - 1 unidad - 20.00 €</li>
+        </ul>
+      </div>
+
+      <!-- Más pedidos de Q2 aquí... -->
+       
+       <!-- Pedidos de Q3 aquí ... -->
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
