@@ -14,48 +14,90 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="api_tiempo_aranjuez.html">Api</a></li>
                 <li><a href="paginaprincipal.html">Informacion Aranjuez</a></li>
                 <li><a href="informacionMetereologica.html">Información meteorológica Aranjuez</a></li>
                 <li><a href="informacionAranjuez.html">Informacion de Aranjuez adicional</a></li>
             </ul>
     </nav>
-</header>
-  <!-- Filtros para mostrar la información -->
-  <section id="filters">
-    <label for="comunidad">Comunidad Autónoma:</label>
-    <select id="comunidad">
-    </select>
+  </header>
+</head>
+<body>
 
-    <label for="localidad">Localidad:</label>
-    <select id="localidad-select">
-    </select>
+<div class="container mt-5">
+  <form id="dataSelectionForm">
+      <div class="form-group">
+          <label for="indexSelect">Selecciona un índice:</label>
+          <select class="form-control" id="indexSelect">
+          </select>
+      </div>
+  </form>
+  <table id="weather-table" class="table">
+      <thead>
+          <tr>
+              <th>Ciudad</th>
+              <th>Provincia</th>
+              <th>Descripción del Clima</th>
+              <th>Temperatura Máxima (°C)</th>
+              <th>Temperatura Mínima (°C)</th>
+          </tr>
+      </thead>
+      <tbody id="weather-data">
+      </tbody>
+  </table>
+</div>
+<script>
+  window.onload = function() {
+      fetch('https://www.el-tiempo.net/api/json/v2/provincias/28/municipios/28079')
+          .then(response => response.json())
+          .then(data => {
+              const city = data.municipio;  // Cambié "cities" a "city" ya que parece que es un solo municipio
+              const citySelect = document.getElementById('indexSelect');
+              
+              // Añadir la opción de ciudad
+              const option = document.createElement('option');
+              option.value = city.NOMBRE;
+              option.text = city.NOMBRE;
+              citySelect.appendChild(option);
+              
+              // Cambiar el evento de selección
+              citySelect.addEventListener('change', function() {
+                  if (this.value === city.NOMBRE) {
+                      const weatherTable = document.getElementById('weather-table');
+                      weatherTable.innerHTML = `
+                          <thead>
+                              <tr>
+                                  <th>Ciudad</th>
+                                  <th>Provincia</th>
+                                  <th>Descripción del Clima</th>
+                                  <th>Temperatura Actual (°C)</th>
+                                  <th>Temperatura Máxima (°C)</th>
+                                  <th>Temperatura Mínima (°C)</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>${city.NOMBRE}</td>
+                                  <td>${city.NOMBRE_PROVINCIA}</td>
+                                  <td>${data.stateSky.description}</td>
+                                  <td>${data.temperatura_actual}°C</td>
+                                  <td>${data.temperaturas.max}°C</td>
+                                  <td>${data.temperaturas.min}°C</td>
+                              </tr>
+                          </tbody>
+                      `;
+                  }
+              });
+              
+              // Disparar el evento de cambio para cargar los datos iniciales
+              citySelect.dispatchEvent(new Event('change'));
+          })
+          .catch(error => console.error('Error:', error));
+  };
+</script>
 
-    <button id="buscar">Buscar Clima</button>
-  </section>
 
-  <!-- Carrusel de imágenes -->
-  <section id="carrusel">
-    <div class="carousel-container">
-      <img class="carousel-slide" src="PicsArt_09-27-09.34.50-1024x768.jpg" alt="Imagen de la localidad">
-    </div>
-  </section>
 
-  <!-- Sección de clima -->
-  <section id="weather-data">
-    <h2>Clima</h2>
-    <div id="clima">
-        <p>Fecha: <span id="fecha">--</span></p>
-        <p>Temperatura: <span id="temperatura">--</span></p>
-        <p>Viento: <span id="viento">--</span></p>
-    </div>
-  </section>
 
-  <section>
-    <div>
-        <p></p>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
 </body>
-</html>
+</html></footer>
