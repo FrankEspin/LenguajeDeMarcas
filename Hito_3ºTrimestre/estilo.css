@@ -1,0 +1,156 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografía y colores base */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 30px;
+    background-color: #82b3d3;
+    color: white;
+    border-bottom: 5px solid  #82b3d3;;
+  }
+  
+  #escudo {
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Filtros */
+  #filters {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  #filters select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 180px;
+    background-color: #f0f4f8;
+    transition: 0.3s;
+  }
+  
+  #filters select:hover {
+    border-color: #2980b9;
+    background-color: #ecf0f1;
+  }
+  
+  #buscar {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #buscar:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Carrusel de imágenes */
+  #carrusel {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-container img {
+    border-radius: 10px;
+  }
+  
+  /* Sección de clima */
+  #weather-data {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #weather-data p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #2c3e50;
+  }
+  
+  /* Diseño responsive */
+  @media (max-width: 768px) {
+    header {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #filters select, #buscar {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    #carrusel .carousel-container {
+      width: 100%;
+    }
+  
+    #weather-data {
+      margin-top: 20px;
+    }
+  }
+  
