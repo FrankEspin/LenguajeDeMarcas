@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicación del Tiempo - Localidad</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="localidad">Aranjuez</h1>
+    <img id="escudo" src="escudo_aranjuez.jpg" alt="Escudo de la localidad">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="paginaprincipal.html">Informacion Aranjuez</a></li>
+                <li><a href="informacionMetereologica.html">Información meteorológica Aranjuez</a></li>
+                <li><a href="informacionAranjuez.html">Informacion de Aranjuez adicional</a></li>
+            </ul>
+    </nav>
+</header>
+  <!-- Filtros para mostrar la información -->
+  <section id="filters">
+    <label for="comunidad">Comunidad Autónoma:</label>
+    <select id="comunidad">
+    </select>
+
+    <label for="localidad">Localidad:</label>
+    <select id="localidad-select">
+    </select>
+
+    <button id="buscar">Buscar Clima</button>
+  </section>
+
+  <!-- Carrusel de imágenes -->
+  <section id="carrusel">
+    <div class="carousel-container">
+      <img class="carousel-slide" src="PicsArt_09-27-09.34.50-1024x768.jpg" alt="Imagen de la localidad">
+    </div>
+  </section>
+
+  <!-- Sección de clima -->
+  <section id="weather-data">
+    <h2>Clima</h2>
+    <div id="clima">
+        <p>Fecha: <span id="fecha">--</span></p>
+        <p>Temperatura: <span id="temperatura">--</span></p>
+        <p>Viento: <span id="viento">--</span></p>
+    </div>
+  </section>
+
+  <section>
+    <div>
+        <p></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
